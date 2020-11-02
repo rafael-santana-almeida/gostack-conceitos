@@ -2,38 +2,102 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 body {
   font-size: 14px;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
-}
-
-div li {
+.container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
+  width: 547px;
+  margin: 0 auto;
 }
 
-div li + li {
-  margin-top: 15px;
+.container h1 {
+  font-size: 48px;
+  color: #7159C1;
 }
 
-button {
-  background: #7159c1;
-  color: #fff;
-  border: 0;
-  padding: 10px 15px;
-  cursor: pointer;
-  margin-top: 15px;
+.container .addButton {
+  height: 60px;
+  background: #2ECC71;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 20px;
   font-weight: bold;
-  font-size: 14px;
+  color: #fff;
+
+  margin: 20px 0;
+  cursor: pointer;
 }
 
-div li button {
-  margin: 0 15px;
-  background: #ca4949;
+.container .addButton:hover {
+  background: rgba(46,204,113, 0.9);
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #e2e2e2;
+  height: 120px;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 22px;
+}
+
+ul li + li {
+  margin-top: 15px;
+}
+
+.buttons {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons .like {
+  width: 95px;
+  height: 30px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 8px;
+  
+  background: #3498DB;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.buttons .like:hover {
+  background: rgba(52, 152, 219, 0.9);
+}
+
+.buttons .delete {
+  width: 100px;
+  height: 30px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 8px;
+  
+  background: #CA4949;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.buttons .delete:hover {
+  background: rgba(202, 73, 73, 0.9);
 }
